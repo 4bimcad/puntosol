@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Consulta el puntaje crediticio de tu empresa con PuntoSol. Verifica si estás en Infocorp, consulta tu reporte de deuda, y obtén información sobre tu situación financiera de manera gratuita.">
+    <meta name="keywords" content="estoy en infocorp, saber si estoy en infocorp, infocorp gratis, como saber si estoy en infocorp, deudas infocorp, reporte infocorp, infocorp deuda, equifax, equifax infocorp, consulta infocorp, infocorp peru, sbs infocorp, sbs, deuda en infocorp, sentinel, sentinel infocorp, deudas en infocorp, reporte de infocorp, infocorp dni, infocorp que es, infocorp reporte gratis, como saber si estoy en infocorp gratis, infocorp consulta gratis, ver si estoy en infocorp, prestamos">
+    <meta name="generator" content="PuntoSol">
+    <meta name="author" content="PuntoSol">
+    <title>Consultar Puntaje Crediticio de Empresa - PuntoSol</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles-1.css">
+    <link rel="stylesheet" href="css/style-score.css">
+
+    <style>
+      body {
+        background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+      }
+
+      .container {
+        max-width: 960px;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+
+<div class="py-3">
+  <header>
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="index.html" class="d-flex align-items-center text-dark text-decoration-none">
+          <i class="bi bi-sun fs-4"></i>
+          <span class="fs-4">&nbsp;PuntoSol</span>
+        </a>
+    
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto no-print">
+            <a class="me-3 py-2 text-dark text-decoration-none link-hover" href="index.html" >Inicio</a>
+            <a class="me-3 py-2 text-dark text-decoration-none link-hover" href="puntaje_crediticio.html">Puntaje Crediticio</a>
+            <a class="me-3 py-2 text-dark text-decoration-none link-hover" href="servicios.html">Servicios</a>
+            <a class="py-2 text-dark text-decoration-none link-hover" href="contactos.html">Contactos</a>
+        </nav>
+      </div>
+    </div>    
+  </header>
+
+
+    <div class="container px-4 ">
+        <h3 class="mt-4">Consultar Puntaje Crediticio de Empresa</h3>
+        <hr>
+       
+        <!-- Datos de Identidad  -->
+
+          <div>
+            <strong>Completa los datos:</strong>
+          </div>  
+        <div class="container mt-1">
+          <div class="border-content-grey">
+            <div class="container-responsive">
+              <div class="d-flex flex-wrap">
+                <!-- Document Number Input -->
+                <div class="w-100">
+                  <label for="numberDocument-2" class="form-label">
+                    N° de RUC - Registro Único de Contribuyente: <span class="asteriscofastrack"></span>
+                  </label>
+                  <div class="input-group">
+                    <input 
+                      id="numberDocument-2" 
+                      type="text" 
+                      name="documentNumber" 
+                      placeholder="Ingrese su RUC" 
+                      class="form-control"
+                      pattern="\d*"
+                      title="Debe ingresar 11 números"
+                      maxlength="11" 
+                      required
+                    >
+                    <button 
+                      id="verify-document-2" 
+                      class="btn btn-primary" 
+                      type="button" 
+                      disabled
+                    >
+                      Buscar
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="error-message" class="mt-2 dark-blue"></div>
+
+              
+              <div class="container" id="client_info-2">
+                <div id="result">
+                    <i class="bi bi-card-heading fs-2 dark-blue"></i>
+                    <span id="ruc" class="large-text dark-blue">...</span>
+                    <br>
+                    <i class="bi bi-building fs-3 dark-blue"></i>
+                    <span id="razonSocial" class="large-text dark-blue">...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Terminos y Condiciones -->
+        <div class="container mt-3">
+          <div class="p-4">
+            <!-- First Checkbox -->
+            <div class="mb-4">
+              <div class="form-check">
+                <input 
+                  type="checkbox" 
+                  class="form-check-input" 
+                  id="polices-2" 
+                  name="legal-policies"
+                >
+                <label for="polices" class="form-check-label custom-checkbox-label">
+                  He leído y otorgo 
+                  <a href="consentimineto.html" target="_blank">
+                    Consentimiento para tratamiento de datos
+                  </a>
+                </label>
+              </div>
+            </div>
+            <!-- Second Checkbox -->
+            <div class="mb-4">
+              <div class="form-check">
+                <input 
+                  type="checkbox" 
+                  class="form-check-input" 
+                  id="condicion-2" 
+                  name="legal-conditions"
+                >
+                <label for="condicion" class="form-check-label custom-checkbox-label">
+                  He leído y acepto los 
+                  <a href="terminos_y_condiciones.html" target="_blank">
+                    Términos y Condiciones
+                  </a> y 
+                  <a href="politica_de_privacidad.html" target="_blank">
+                    Política de Privacidad
+                  </a>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>        
+      
+        <!-- Button -->
+        <div class="text-align-right">
+          <button id="continue-button-2" type="button" class="btn btn-primary btn-lg" disabled>
+            Consultar <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+        <div class="container pt-2" id="text_disclaimer">
+          <small class="text-small-disclaimer">
+            Descargo de responsabilidad: Los datos proporcionados provienen de terceros y pueden contener inexactitudes; esta es una herramienta informativa en fase de prueba y no constituye asesoramiento financiero.
+          </small> 
+        </div>
+    </div>
+
+
+
+
+    
+
+    </div>
+
+
+
+
+
+  <div class="container py-3">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md text-secondary">
+          <div class="credit-cards-icons">
+            <i class="fa-brands fa-cc-amex" style="font-size: 2rem; margin-right: 10px;"></i>
+            <i class="fa-brands fa-cc-visa" style="font-size: 2rem; margin-right: 10px;"></i>
+            <i class="fa-brands fa-cc-mastercard" style="font-size: 2rem; margin-right: 10px;"></i>
+            <i class="fa-brands fa-cc-diners-club" style="font-size: 2rem; margin-right: 10px;"></i>
+          </div>          
+        </div>
+        <div class="col-6 col-md">
+          <h5>Menu</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none link-hover-primary" href="index.html">Inicio</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none link-hover-primary" href="puntaje_crediticio.html">Puntaje Crediticio</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none link-hover-primary" href="servicios.html">Servicios</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none link-hover-primary" href="contactos.html">Contactos</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>ENLACES ÚTILES</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none link-hover-primary" href="terminos_y_condiciones.html">Términos y Condiciones</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none link-hover-primary" href="politica_de_privacidad.html">Política de Privacidad</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none link-hover-primary" href="consentimiento.html">Consentimiento para tratamiento de datos</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none link-hover-primary" href="disclaimer.html">Descargo de responsabilidad</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <small class="d-block mb-3 text-muted">&copy; PuntoSol 2024 Todos los derechos reservados.</small>
+    </footer>
+    </div>
+
+
+
+
+
+</div>
+
+  
+
+    <!-- Подключение JS Bootstrap через CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src="js/credit-score-empresa.js"></script>
+    <script src="js/main-empresa.js"></script>
+    <script src="js/verification_empresa.js"></script>
+    <script src="js/reporte-empresa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js"></script>
+  </body>
+</html>
