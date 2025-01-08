@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Puntaje Crediticio de una Empresa - Punto Sol</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="empresa puntaje, consultas, crediticio, puntaje crediticio, empresa, infocorp, mantinel, gestión financiera, reputación crediticia, optimización de impuestos, análisis financiero, soluciones financieras, asesoría fiscal, planificación financiera" name="keywords">
+    <meta content="Punto Sol es un servicio online especializado en análisis de reputación financiera, gestión de finanzas y optimización de impuestos. Mejora tu situación financiera y fortalece la confianza de tus socios con nuestras herramientas y asesorías." name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles-1.css" rel="stylesheet">
+    <link href="css/style-score.css" rel="stylesheet">
+    <link href="css/style-cards.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+        <div class="container">
+            <div class="d-flex justify-content-between topbar">
+                <div class="top-info">
+                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Arequipa, Perú</small>
+                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>info@puntosol.org.pe</small>
+                </div>
+                <div id="note" class="text-secondary d-none d-xl-flex"><small>Nota : Tu Reputación es tu Activo más Valioso.</small></div>
+                <div class="top-link">
+<!--                <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white fw-bold d-block">Punto<span class="text-secondary">Sol</span> </h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                        <a href="service.html" class="nav-item nav-link">Servicios</a>
+                        <a href="prices.html" class="nav-item nav-link">Precios</a>
+                        <a href="contact.html" class="nav-item nav-link">Contactos</a>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shirink-0">
+                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                        <a href="" class="position-relative animated tada infinite">
+                            <i class="fa fa-phone-alt text-white fa-2x"></i>
+                            <div class="position-absolute" style="top: -7px; left: 20px;">
+                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column pe-4 border-end">
+                        <span class="text-white-50">¿Tienes preguntas?</span>
+                        <span class="text-secondary">Llámanos: +51 1 7057745</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center ms-4 ">
+                        <a href="disclaimer.html"><i class="bi bi-info-circle-fill text-white fa-2x"></i> </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-5">
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4 animated slideInDown">Reporte. Puntaje Crediticio de Empresa</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Reporte. Puntaje Crediticio de Empresa</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- start empresa puntaje -->
+
+      <div class="container py-3">
+      <div class="col-sm-12">
+
+        <!-- Puntaje Crediticio  -->
+        
+
+        <div class="container" id="main_all">
+
+            <div>
+              <h3>Reporte de Crédito: Puntaje y Evaluación</h3>
+            </div>
+
+            <hr>
+
+            <div class="row justify-content-between align-items-stretch">
+              <div class="col-6 d-flex align-items-center">
+                <div>
+                  <div>
+                    <b><i class="bi bi-speedometer2"></i>&nbsp;Puntaje Crediticio:</b>&nbsp;<span id="puntaje_crediticio-2">0</span>
+                  </div>
+                  <div>
+                    <b><i class="bi bi-calendar4-week"></i>&nbsp;Fecha:</b> <span id="reporte_date-2"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 d-flex align-items-center">
+                <div>
+                  <div>
+                    <b><i class="bi bi-building"></i>&nbsp;Empresa:</b>
+                        <span id="razon_reporte">Razon</span>&nbsp;
+                  </div>
+                  <div>
+                    <b><i class="bi bi-person-vcard"></i>&nbsp;RUC:</b>
+                    <span id="ruc_reporte">RUC</span>&nbsp;                   
+                  </div>              
+                </div>
+              </div>
+            </div>
+            
+            <hr>
+            
+              
+
+
+    
+
+          <div class="container" id="score-visualisation">
+            <div class="row">
+              <div class="sixteen columns text-center score-announcement">
+                <!-- This is an instance where we need the actual credit score and the page will animate the number growing to the specified amount in the data attribute. -->
+                <h1 data-animate="count-out" data-value="0" id="score-actual" style="color: azure;">0</h1>
+                <p class="score-comment">Con el tiempo, siempre puedes mejorar tu Puntuación Crediticia</p>
+              </div>
+              <div class="sixteen columns score-scale">
+                <!-- This element will animate where the credit score will fall in the scale from 200-850. The data attribute should be a value from 1-100. So a credit score of 764 is 89% of 850, so it needs to be 89 -->
+                <ul data-animate="colorScale" data-value="45" class="scaleColors" id="score-actual-2">
+                  <li></li><li></li><li></li><li></li>
+                  <div class="scoreTick"></div>
+                  <div class="scoreArrow"></div>
+                </ul>
+                <ul class="scaleTicks">
+                  <li>300</li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li>850</li>
+                </ul>
+              </div>
+            </div>
+          <hr>
+        </div>
+
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-auto">
+            <button class="btn btn-primary" id="imprimir-btn" onclick="window.location.href='buy_report_basico.html';"><i
+                class="bi bi-file-earmark-text"></i>&nbsp;Comprar Reporte Básico S/29.90</button>
+            <button class="btn btn-success" id="imprimir-btn" onclick="window.location.href='buy_report_detallado.html';"><i
+                class="bi bi-file-earmark-ruled"></i>&nbsp;Comprar Reporte Detallado S/49.90</button>
+          </div>
+      </div>
+    </div>
+    
+    
+          <div>
+            <h3>Todo lo que necesitas saber sobre el puntaje crediticio</h3>
+            
+            <p><strong>El puntaje crediticio</strong> es un número que se utiliza para evaluar la solvencia financiera de una persona o entidad. Es fundamental para obtener crédito, ya sea para pedir un préstamo, comprar una casa o incluso obtener una tarjeta de crédito. Este puntaje se calcula a partir del comportamiento financiero pasado de un individuo y se basa en varios factores, que pueden variar según la agencia de informes crediticios.</p>
+    
+            <h3>¿Cómo se forma el puntaje crediticio?</h3>
+            <p>El puntaje crediticio se calcula mediante un algoritmo basado en los datos de tu historial financiero. En general, las principales agencias de crédito (como FICO y VantageScore) utilizan un sistema basado en varios factores clave:</p>
+    
+            <ul>
+                <li><strong>Historial de pagos:</strong> Este factor representa alrededor del 35% de tu puntaje. Se refiere a si has pagado tus deudas a tiempo o si has tenido retrasos en los pagos.</li>
+                <li><strong>Utilización de crédito:</strong> Representa aproximadamente el 30%. Mide cuánto de tu crédito disponible estás utilizando. Si usas más del 30% de tu límite de crédito, esto puede afectar negativamente tu puntaje.</li>
+                <li><strong>Antigüedad del crédito:</strong> Representa alrededor del 15%. Este factor mide cuánto tiempo has tenido crédito y cuánto tiempo han estado abiertas tus cuentas. Un historial largo de crédito suele ser favorable.</li>
+                <li><strong>Tipos de crédito:</strong> Representa el 10%. Este factor se refiere a los diferentes tipos de crédito que tienes, como tarjetas de crédito, préstamos personales, hipotecas, etc. Tener una variedad de tipos de crédito puede mejorar tu puntaje.</li>
+                <li><strong>Solicitudes de crédito recientes:</strong> También representa el 10%. Si solicitas muchas líneas de crédito en un corto período de tiempo, esto puede reducir tu puntaje crediticio, ya que puede indicar que estás asumiendo demasiada deuda.</li>
+            </ul>
+    
+            <h3>La escala FICO</h3>
+            <p>La mayoría de las instituciones financieras utilizan el modelo de puntaje FICO, que tiene una escala que va desde 300 hasta 850. A continuación, te explicamos la clasificación según el puntaje FICO:</p>
+    
+            <ul>
+                <li><strong>300-579 (Puntaje muy bajo):</strong> Si tienes un puntaje en este rango, es probable que tengas dificultades para obtener crédito o que debas pagar tasas de interés altas. Es importante mejorar tu puntaje en este rango.</li>
+                <li><strong>580-669 (Puntaje regular):</strong> Este rango muestra que tu crédito es aceptable, pero aún no es ideal. Puedes obtener crédito, pero las tasas de interés pueden ser más altas.</li>
+                <li><strong>670-739 (Puntaje bueno):</strong> Un puntaje en este rango se considera bueno. Las instituciones financieras te ofrecerán crédito con tasas de interés más competitivas.</li>
+                <li><strong>740-799 (Puntaje excelente):</strong> Si tienes un puntaje en este rango, eres considerado un prestatario de bajo riesgo. Podrás acceder a tasas de interés bajas y créditos con condiciones favorables.</li>
+                <li><strong>800-850 (Puntaje sobresaliente):</strong> Este es el rango más alto y representa a los prestatarios con el mejor historial crediticio. Es probable que tengas acceso a las mejores tasas de interés y las mejores condiciones de crédito.</li>
+            </ul>
+    
+            <h3>¿Por qué es importante tu puntaje crediticio?</h3>
+            <p>Tu puntaje crediticio es crucial porque las entidades financieras lo utilizan para determinar si eres un buen candidato para un préstamo, hipoteca o tarjeta de crédito. También puede influir en la tasa de interés que se te ofrezca. Un puntaje más alto generalmente significa mejores tasas de interés, lo que puede ahorrarte dinero a largo plazo.</p>
+    
+            <h3>¿Cómo mejorar tu puntaje crediticio?</h3>
+            <p>Si tu puntaje crediticio no es el que deseas, existen varios pasos que puedes tomar para mejorarlo:</p>
+    
+            <ul>
+                <li><strong>Paga tus cuentas a tiempo:</strong> La puntualidad en los pagos es el factor más importante en la determinación de tu puntaje.</li>
+                <li><strong>Reduce tu deuda:</strong> Intenta pagar más de lo mínimo requerido, especialmente si tienes balances altos en tus tarjetas de crédito.</li>
+                <li><strong>No cierres cuentas antiguas:</strong> El tiempo que has tenido crédito es un factor importante, así que mantener abiertas las cuentas antiguas puede ayudar a mejorar tu puntaje.</li>
+                <li><strong>Evita solicitar crédito en exceso:</strong> Solicitar demasiadas líneas de crédito puede afectar negativamente tu puntaje. Solo solicita crédito cuando realmente lo necesites.</li>
+            </ul>
+    
+            <p>El puntaje crediticio es un reflejo de tu comportamiento financiero y es esencial para acceder a productos financieros como préstamos y tarjetas de crédito. Mantener un buen puntaje te ayudará a obtener mejores condiciones y a ahorrar dinero en intereses. Si aún no tienes un puntaje alto, no te preocupes, siempre puedes mejorar tu puntaje con el tiempo si tomas decisiones financieras responsables.</p>
+        </div>
+    
+
+
+          </div>
+
+
+      </div>
+      </div>
+        <!-- Footer Start -->
+        <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+            <div class="container pt-5 pb-4">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <a href="index.html">
+                            <h1 class="text-white fw-bold d-block">Punto<span class="text-secondary">Sol</span> </h1>
+                        </a>
+                        <p class="mt-4 text-light"><b>Punto Sol</b> es un servicio online especializado en análisis de reputación financiera, gestión de finanzas y optimización de impuestos.</p>
+                        <div class="d-flex hightech-link">
+                           <!--  <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Menu</a>
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="index.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Inicio</a>
+                            <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nosotros</a>
+                            <a href="service.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Servicios</a>
+                            <a href="prices.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Precios</a>
+                            <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contactos</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Enlaces Útiles</a>
+                        <div class="mt-4 d-flex flex-column help-link">
+                            <a href="terminos.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Términos y Condiciones</a>
+                            <a href="politica.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Política de Privacidad</a>
+                            <a href="datos.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Consentimiento para tratamiento de datos</a>
+                            <a href="disclaimer.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Descargo de responsabilidad</a>
+                            <!-- <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FAQs</a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Contáctanos</a>
+                        <div class="text-white mt-4 d-flex flex-column contact-link">
+                            <a class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Nasya II, of. 704, Yanahuara, Arequipa, Perú</a>
+                            <a class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +51 1 7057745</a>
+                            <a class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> info@puntosol.org.pe</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-light mt-5 mb-4">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span class="text-light"><a href="index.html" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Puntosol.org.pe</a>, Todos los derechos reservados.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <span class="text-light">Diseñado por<a href="https://htmlcodex.com" class="text-secondary"> HTML Codex</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.10/jquery.animateNumber.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/main-empresa.js"></script>
+            <script src="js/reporte-empresa.js"></script>
+            <script src="js/verification_empresa.js"></script>
+            <script src="js/credit-score-empresa.js"></script>
+            <script src="js/score-data-empresa.js"></script>
+            <!-- <script src="js/print_report.js"></script> -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js"></script>
+    </body>
+
+</html>

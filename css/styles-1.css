@@ -1,0 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Меняем шрифт на Poppins */
+  }
+
+.border-content-grey {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.rojo {
+  color: red;
+}
+.btn-verify[disabled] {
+  opacity: 0.5;
+}
+.asteriscofastrack::after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+
+.verde {
+    color: #007b00; /* Зелёный цвет для текста */
+    font-weight: bold;
+  }
+  .dark-blue {
+    color: #003366; /* Тёмно-синий цвет */
+  }
+  .large-icon {
+    font-size: 1.5rem; /* Увеличенная иконка */
+  }
+  .large-text {
+    font-size: 1.5rem; /* Увеличенный текст для имени */
+    font-weight: bold;
+  }
+
+
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  .custom-checkbox-label {
+    font-size: 1rem;
+  }
+  .custom-checkbox-label a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .custom-checkbox-label a:hover {
+    text-decoration: underline;
+  }
+
+  .text-small-disclaimer {
+    font-size: 0.7rem; /* Очень маленький текст */
+    color: gray;       /* Слабый цвет для ненавязчивости */
+    line-height: 1.2;  /* Немного уменьшенный межстрочный интервал */
+  }
+  
+  nav a.active {
+    color: #003366; /* Цвет для активной страницы */
+    border-bottom: 0.3px solid #003366; /* Тонкая линия под активной ссылкой */
+  }
+
+
+  /* Добавляем эффект при наведении */
+.hover-card {
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.hover-card:hover {
+  transform: scale(1.01); /* Легкое увеличение */
+  border-color: #003366; /* Цвет рамки при наведении */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для большой иконки */
+.icon-large {
+  font-size: 3rem; /* Размер иконки */
+  color: #003366; /* Цвет иконки */
+  margin-right: 15px; /* Отступ между иконкой и текстом */
+}
+
+/* Стили для текста */
+.text-container {
+  flex: 1; /* Занимает оставшееся пространство */
+}
+
+/* Убираем маргин у кнопки */
+.card .btn {
+  margin-top: 10px;
+}
+
+
+  
