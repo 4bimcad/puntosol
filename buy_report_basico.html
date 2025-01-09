@@ -116,15 +116,42 @@
 
 
         <!-- start mi puntaje -->
+        <div class="container py-4">
+            <h3>Comprar Reporte Básico (S/29.90)</h3>
+            <p>
+                Para obtener su reporte, complete todos los datos y realice el pago por el monto indicado. Una vez que se confirme el pago, elaboraremos su reporte en un plazo máximo de un día hábil y se lo enviaremos a su correo electrónico.
+            </p>
+        </div>
 
-      <div class="container">
-      <div class="col-md-12 text-center">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeBlqHed3eyDH742-U2oorcwKXK4gIqCm9l03skk01lE8zdLA/viewform?embedded=true" width="800" height="1600" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-      </div>
-      </div>
-
-        <!-- end mi puntaje -->
-
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+              <div class="wow fadeIn" data-wow-delay=".5s">
+                <form id="myForm" action="https://formspree.io/f/mrbbrzpe" method="POST">
+                  <div class="p-5 rounded contact-form">
+                    <div class="mb-4">
+                      <input type="text" class="form-control border-0 py-3" name="names" placeholder="Nombres y Apellidos" required>
+                    </div>
+                    <div class="mb-4">
+                      <input type="number" class="form-control border-0 py-3" name="dni" placeholder="DNI" required>
+                    </div>
+                    <div class="mb-4">
+                      <input type="number" class="form-control border-0 py-3" name="ruc" placeholder="RUC" required>
+                    </div>
+                    <div class="mb-4">
+                      <input type="email" class="form-control border-0 py-3" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="text-start">
+                      <button id="submitButton" class="btn bg-primary text-white py-3 px-5" type="button">Comprar Reporte Básico (S/29.90)</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <br>
+          <!-- Скрите посилання -->
+          <a href="#buy" id="buyLink" class="avangate_button" product-code="SGWOQ5ACW5" product-quantity="1" style="display:none;">Buy now!</a>
+          
 
         <!-- Footer Start -->
         <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
@@ -206,6 +233,8 @@
         <script src="js/reporte.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js"></script>
+        <script src="js/buy.js"></script>
+        <script src="js/buy_logic1.js"></script>
     </body>
 
 </html>
